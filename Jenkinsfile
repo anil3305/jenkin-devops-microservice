@@ -10,7 +10,7 @@ pipeline {
 		stage('Build'){
 			steps{
 				sh "chmod +x -R ${env.WORKSPACE}"
-				sh 'mvn --version'
+				//sh 'mvn --version'
 				sh 'docker version'
 				echo "Build"
 			}
