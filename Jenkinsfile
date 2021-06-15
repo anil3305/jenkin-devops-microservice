@@ -23,7 +23,7 @@ pipeline {
 		always {
 			echo "i am awsome, run always"
 		}
-		successful {
+		success {
 			echo "print if i am successful"
 		}
 		failure {
