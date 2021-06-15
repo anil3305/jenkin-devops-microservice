@@ -1,8 +1,19 @@
-node {
-	stage('Build'){
-		echo "Build"
+pipline {
+	stages{
+		stage('Build'){
+			steps{
+				echo "Build"
+			}
+		}
+		stage('Test'){
+			steps{
+				echo "Test"
+			}
+		}
+		stage('Inegration Test'){
+			steps{
+				echo "Integration Test"
+			}
+		}
 	}
-	stage('Test'){
-		echo "Test"
-	}
-	}
+}
